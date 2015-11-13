@@ -13,7 +13,7 @@ a {
 }
 
 div#hot-info {float:left; min-width:300px; max-width:600px; margin:0px; padding:0px; background-color:#0ffff0;}
-div#login-in {position:fixed; top:10px;margin-right:0px; padding:0px; width:300px; height:400px; background-color:#ffff10; overflow:hidden}
+div#login-in {position:fixed; top:auto; left:50%;z-index:2;margin-left:180px;margin-right:0px; padding:0px; width:300px; height:400px; background-color:#ffff10; overflow:hidden}
 div#footer {padding-top:50px; height:100px; margin:0px; background-color:#ffffff; clear:both; text-align:center;}
 
 
