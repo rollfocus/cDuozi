@@ -4,17 +4,19 @@ block content
   #caduozi-index-not-login
     #index-custom-banner
       #index-header
-        h1(align='center').title cDuozi
-        h2(align='center').subtitle 分享技术笔记，促进技术发展
+        h1.title cDuozi
+        h2.subtitle 分享技术笔记，促进技术发展
   
-      form(method='GET', action='/search').index-search 
-        text.input-text CaoDuoZi   
-        input(type='text', name='q', placeholder='搜索笔记、技术书籍或话题').query
-        button(type='submit' aria-label='提交').summit  Go
-          #i.index-icon-search
+      #index-search-form
+        form(method='GET', action='/search').index-search 
+          #query
+            text.input-text CaoDuoZi     
+            input(type='text', name='q', placeholder='搜索笔记、技术书籍或话题').query
+            button(type='submit' aria-label='提交').submit  Go
+              #i.index-icon-search
 
       #note-scroll
-      p 滚动显示样例笔记效果 增加趣味性 显示访问量评论及
+        p 滚动显示样例笔记效果 增加趣味性 显示访问量评论及
 
       p Welcome to #{title} 
       p 未登录首页醒目大搜索加推荐笔记内容，黑系宣传页内嵌登录入口 滚动列显示笔记/论坛话题 
@@ -23,6 +25,9 @@ block content
     hr.line
     #login-in
       p 排版在右侧显示登录 如果你需要自己网站及app技术参考请联系草垛子团队
+      .index-sign-tabnavs
+        a(href="#signup").active 注册
+        a(href="#signin") 登陆
 
     #hot-info
       #hot-note-books
