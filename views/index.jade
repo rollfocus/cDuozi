@@ -1,6 +1,7 @@
 extends layout
 
 block content
+  script(src='/javascripts/index.js')
   #caduozi-index-not-login
     #index-custom-banner
       #index-header
@@ -23,7 +24,7 @@ block content
       p 登录进去之后可查看笔记/书籍/动态/社区/工具/用户中心等，格式参见
 
     hr.line
-    #login-in
+    #login-in.index-login-window
       p 排版在右侧显示登录 如果你需要自己网站及app技术参考请联系草垛子团队
       .index-sign-tabnavs
         a(href="#signup").active 注册
